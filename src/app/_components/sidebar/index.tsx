@@ -44,10 +44,10 @@ export async function AppSidebar({
             href="/"
             className="hover:bg-sidebar-accent/50 rounded-lg p-2 transition-colors group-data-[collapsible=icon]:flex group-data-[collapsible=icon]:justify-center group-data-[collapsible=icon]:p-2"
           >
-            <HStack className="items-center group-data-[collapsible=icon]:justify-center">
+            <HStack className="min-h-10 px-3 py-2 w-full items-center group-data-[collapsible=icon]:justify-center">
               <Logo className="size-6 group-data-[collapsible=icon]:mx-auto" />
-              <h1 className="shimmer-text overflow-hidden text-xl font-bold whitespace-nowrap group-data-[collapsible=icon]:hidden">
-                Toolkit.dev
+              <h1 className="text-lg font-bold whitespace-normal w-full group-data-[collapsible=icon]:hidden">
+                <span className="text-[#FF2C61]">Autoposting</span> <span>Copilot</span>
               </h1>
             </HStack>
           </Link>
@@ -65,17 +65,17 @@ export async function AppSidebar({
             className="hover:bg-sidebar-accent/50 h-fit w-full rounded-lg p-2 transition-colors group-data-[collapsible=icon]:justify-center group-data-[collapsible=icon]:p-2"
           >
             <Link
-              href="https://github.com/jasonhedman/toolkit.dev"
+              href="https://autoposting.ai"
               target="_blank"
               className="flex items-center gap-3 px-3 transition-all group-data-[collapsible=icon]:justify-center group-data-[collapsible=icon]:gap-0"
             >
-              <SiGithub className="text-sidebar-accent-foreground !size-6 group-data-[collapsible=icon]:mx-auto" />
+              <SiGithub className="text-[#FF2C61] !size-6 group-data-[collapsible=icon]:mx-auto" />
               <VStack className="items-start gap-0 overflow-hidden transition-all group-data-[collapsible=icon]:w-0">
-                <h3 className="shimmer-text text-sidebar-foreground truncate font-medium">
-                  Contribute
+                <h3 className="text-sidebar-foreground truncate font-medium">
+                  Visit Autoposting
                 </h3>
                 <p className="text-sidebar-muted-foreground truncate text-xs">
-                  Join the toolkit developers!
+                  Explore the main platform
                 </p>
               </VStack>
             </Link>

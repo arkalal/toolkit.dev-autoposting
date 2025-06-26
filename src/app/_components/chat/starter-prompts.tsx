@@ -18,9 +18,9 @@ interface StarterPrompt {
 const DYNAMIC_STARTER_PROMPTS: StarterPrompt[] = [
   // Multi-toolkit prompts (4+ toolkits - highest priority)
   {
-    title: "Analyze Toolkit.dev",
+    title: "Analyze Autoposting Copilot",
     prompt:
-      "Search GitHub for jasonhedman/toolkit.dev, analyze the repo, clone the repo and read the readme in a sandbox environment, and give me a getting started guide.",
+      "Tell me about Autoposting Copilot, its core features, and how it can help with auto-posting content to social media platforms.",
     toolkitIds: [Toolkits.Github, Toolkits.E2B, Toolkits.Exa],
     description:
       "Complete React/Next.js analysis: repository discovery, component execution, architecture visualization, and pattern learning",
@@ -412,8 +412,8 @@ export const StarterPrompts = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{
-              enter: { delay: 0.1 + index * 0.1 },
-              exit: { delay: 0, duration: 0.1 },
+              opacity: { delay: 0.1 + index * 0.1 },
+              height: { duration: 0.1 }
             }}
             onClick={() => handlePromptClick(prompt.prompt)}
             className="hover:bg-muted/80 text-muted-foreground hover:text-foreground group relative cursor-pointer rounded-xl border p-2 text-left text-sm transition-colors"

@@ -80,8 +80,8 @@ export const ChatContent = ({
                 }}
                 exit={{ opacity: 0, marginBottom: 0 }}
                 transition={{
-                  enter: { delay: 0.1, duration: 0.3 },
-                  exit: { delay: 0, duration: 0.05 },
+                  opacity: { delay: 0.1, duration: 0.3 },
+                  y: { duration: 0.05 }
                 }}
                 className="flex flex-col items-center gap-4 pt-2 text-center"
               >
@@ -107,7 +107,7 @@ export const ChatContent = ({
                 >
                   {workbench
                     ? `${workbench.name} Workbench`
-                    : "Welcome to Toolkit.dev"}
+                    : "Welcome to Autoposting Copilot"}
                 </motion.h1>
               </motion.div>
             )}
@@ -135,8 +135,8 @@ export const ChatContent = ({
                 }}
                 exit={{ opacity: 0, height: 0, marginTop: 0 }}
                 transition={{
-                  enter: { delay: 0.4, duration: 0.3 },
-                  exit: { delay: 0, duration: 0.1 },
+                  opacity: { delay: 0.4, duration: 0.3 },
+                  height: { duration: 0.1 }
                 }}
                 className="overflow-hidden"
               >

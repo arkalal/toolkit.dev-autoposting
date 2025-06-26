@@ -16,8 +16,8 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Toolkit.dev",
-  description: "A highly-configurable open-source chat client",
+  title: "Autoposting Copilot",
+  description: "AI assistant for automating LinkedIn content creation",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

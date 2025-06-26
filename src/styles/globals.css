@@ -9,18 +9,18 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  /* BLUE ACCENT COLORS - Keep these */
-  --color-primary-500: #63b3ed;
-  --color-primary-600: #4299e1;
-  --color-primary-700: #3182ce;
-  --color-primary-800: #2b6cb0;
-  --color-primary-900: #2c5282;
+  /* AUTOPOSTING ACCENT COLORS */
+  --color-primary-500: #FF2C61;
+  --color-primary-600: #E52758;
+  --color-primary-700: #CC2350;
+  --color-primary-800: #B21E47;
+  --color-primary-900: #991A3E;
 
-  --color-secondary-500: #63b3ed;
-  --color-secondary-600: #4299e1;
-  --color-secondary-700: #3182ce;
-  --color-secondary-800: #2b6cb0;
-  --color-secondary-900: #2c5282;
+  --color-secondary-500: #FF2C61;
+  --color-secondary-600: #E52758;
+  --color-secondary-700: #CC2350;
+  --color-secondary-800: #B21E47;
+  --color-secondary-900: #991A3E;
 
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -171,7 +171,7 @@ body {
   --card-foreground: oklch(0.3211 0 0);
   --popover: oklch(0.9702 0 0);
   --popover-foreground: oklch(0.3211 0 0);
-  --primary: #4299e1;
+  --primary: #FF2C61;
   --primary-foreground: #ffffff;
   --secondary: oklch(0.9067 0 0);
   --secondary-foreground: oklch(0.3211 0 0);
@@ -191,12 +191,12 @@ body {
   --chart-5: oklch(0.8078 0 0);
   --sidebar: oklch(0.937 0 0);
   --sidebar-foreground: oklch(0.3211 0 0);
-  --sidebar-primary: oklch(0.4891 0 0);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.9067 0 0);
-  --sidebar-accent-foreground: oklch(0.3211 0 0);
+  --sidebar-primary: #FF2C61;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #FF2C61;
+  --sidebar-accent-foreground: #ffffff;
   --sidebar-border: oklch(0.8576 0 0);
-  --sidebar-ring: #4299e1;
+  --sidebar-ring: #FF2C61;
   --font-sans: Space Grotesk, serif;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: JetBrains Mono, monospace;
@@ -222,7 +222,7 @@ body {
   --card-foreground: oklch(0.8853 0 0);
   --popover: oklch(0.2435 0 0);
   --popover-foreground: oklch(0.8853 0 0);
-  --primary: #63b3ed;
+  --primary: #FF2C61;
   --primary-foreground: #0f1419;
   --secondary: oklch(0.3092 0 0);
   --secondary-foreground: oklch(0.8853 0 0);
@@ -247,7 +247,7 @@ body {
   --sidebar-accent: oklch(0.275 0 0);
   --sidebar-accent-foreground: oklch(0.8853 0 0);
   --sidebar-border: oklch(0.329 0 0);
-  --sidebar-ring: #63b3ed;
+  --sidebar-ring: #FF2C61;
   --font-sans: Space Grotesk, serif;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: JetBrains Mono, monospace;
@@ -290,7 +290,7 @@ body {
     135deg,
     #2d3748 0%,
     #4a5568 25%,
-    #63b3ed 50%,
+    #FF2C61 50%,
     #4a5568 75%,
     #2d3748 100%
   );
@@ -308,7 +308,7 @@ body {
     135deg,
     #cbd5e0 0%,
     #e2e8f0 25%,
-    #63b3ed 50%,
+    #FF2C61 50%,
     #e2e8f0 75%,
     #cbd5e0 100%
   );
@@ -330,8 +330,8 @@ body {
 
 /* PREMIUM USER CHAT BUBBLES */
 .user-message {
-  background: linear-gradient(135deg, #4299e1 0%, #63b3ed 50%, #4299e1 100%);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #E52758 0%, #FF2C61 50%, #E52758 100%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow:
     0 4px 12px rgba(66, 153, 225, 0.25),
     0 2px 4px rgba(0, 0, 0, 0.1),
@@ -358,12 +358,12 @@ body {
 }
 
 .dark .user-message {
-  background: linear-gradient(135deg, #4299e1 0%, #63b3ed 50%, #4299e1 100%);
-  border: 1px solid rgba(99, 179, 237, 0.4);
+  background: linear-gradient(135deg, #E52758 0%, #FF2C61 50%, #E52758 100%);
+  border: 1px solid rgba(255, 44, 97, 0.4);
   box-shadow:
-    0 4px 12px rgba(99, 179, 237, 0.3),
+    0 4px 12px rgba(255, 44, 97, 0.3),
     0 2px 4px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(99, 179, 237, 0.2),
+    inset 0 1px 0 rgba(255, 44, 97, 0.2),
     inset 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -390,24 +390,24 @@ body {
   background: linear-gradient(
     180deg,
     transparent 0%,
-    rgba(99, 179, 237, 0.6) 30%,
-    rgba(99, 179, 237, 0.8) 50%,
-    rgba(99, 179, 237, 0.6) 70%,
+    rgba(255, 44, 97, 0.6) 30%,
+    rgba(255, 44, 97, 0.8) 50%,
+    rgba(255, 44, 97, 0.6) 70%,
     transparent 100%
   );
   animation: sidebar-glow 6s ease-in-out infinite;
 }
 
-/* Blue outline/border effects */
+/* Pink outline/border effects */
 .blue-outline {
-  border: 1px solid rgba(99, 179, 237, 0.3);
+  border: 1px solid rgba(255, 44, 97, 0.3);
 }
 
 .blue-outline:hover {
-  border-color: rgba(99, 179, 237, 0.5);
+  border-color: rgba(255, 44, 97, 0.5);
 }
 
 .blue-outline:focus {
-  outline: 2px solid rgba(99, 179, 237, 0.6);
+  outline: 2px solid rgba(255, 44, 97, 0.6);
   outline-offset: 2px;
 }

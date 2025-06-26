@@ -2,9 +2,9 @@
   <defs>
     <!-- Gradient matching the CSS linear-gradient(135deg, #4299e1 0%, #63b3ed 50%, #4299e1 100%) -->
     <linearGradient id="userMessageGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#4299e1;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#63b3ed;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#4299e1;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#E52758;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF2C61;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E52758;stop-opacity:1" />
     </linearGradient>
     
     <!-- Filter for shadow effects -->
@@ -12,7 +12,7 @@
       <!-- Outer shadow (enhanced for more pronounced effect) -->
       <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
       <feOffset dx="0" dy="8" result="offset"/>
-      <feFlood flood-color="#4299e1" flood-opacity="0.4"/>
+      <feFlood flood-color="#FF2C61" flood-opacity="0.4"/>
       <feComposite in2="offset" operator="in"/>
       <feMerge> 
         <feMergeNode/>
